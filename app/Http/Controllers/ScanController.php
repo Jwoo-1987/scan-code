@@ -14,7 +14,7 @@ class ScanController extends Controller
 
     public function test(){
         $config = config('wechat.official_account');
-        $app = Factory::officialAccount($config);
+        $app = Factory::officialAccount($config['default']);
 
         var_dump($app->jssdk->buildConfig(['das','dada'], $debug = false, $beta = false, $json = true));
     }
