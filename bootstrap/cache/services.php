@@ -28,10 +28,11 @@
     24 => 'Laravel\\Tinker\\TinkerServiceProvider',
     25 => 'Carbon\\Laravel\\ServiceProvider',
     26 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    27 => 'App\\Providers\\AppServiceProvider',
-    28 => 'App\\Providers\\AuthServiceProvider',
-    29 => 'App\\Providers\\EventServiceProvider',
-    30 => 'App\\Providers\\RouteServiceProvider',
+    27 => 'Overtrue\\LaravelWeChat\\ServiceProvider',
+    28 => 'App\\Providers\\AppServiceProvider',
+    29 => 'App\\Providers\\AuthServiceProvider',
+    30 => 'App\\Providers\\EventServiceProvider',
+    31 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -49,10 +50,11 @@
     11 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     12 => 'Carbon\\Laravel\\ServiceProvider',
     13 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    14 => 'App\\Providers\\AppServiceProvider',
-    15 => 'App\\Providers\\AuthServiceProvider',
-    16 => 'App\\Providers\\EventServiceProvider',
-    17 => 'App\\Providers\\RouteServiceProvider',
+    14 => 'Overtrue\\LaravelWeChat\\ServiceProvider',
+    15 => 'App\\Providers\\AppServiceProvider',
+    16 => 'App\\Providers\\AuthServiceProvider',
+    17 => 'App\\Providers\\EventServiceProvider',
+    18 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (

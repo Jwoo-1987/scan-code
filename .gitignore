@@ -1,0 +1,11 @@
+.env
+.idea/.name
+.idea/blade.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scan-code.iml
+.idea/vcs.xml
+.idea/workspace.xml
+public/nginx.htaccess
+
