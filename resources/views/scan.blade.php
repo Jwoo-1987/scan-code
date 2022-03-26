@@ -16,16 +16,14 @@
 </body>
 <script>
     $(function(){
-        /*wx.config({
-         debug: false,
-         appId: "wx7d62dd68f98515d9",
-         timestamp:"1648264854",
-         nonceStr:"rczZPLkSo0",
-         signature:"f071d1d65f675cc9cab8980fb2d436629d1c55cd",
-         jsApiList : [ 'checkJsApi', 'scanQRCode' ],
-         url :"http://192.168.31.18:9999/scan/test"
-         });*/
-        wx.config({{$str}});
+        wx.config({
+             debug: false,
+             appId: "{{$str['appId']}}",
+             timestamp:"{{$str['timestamp']}}",
+             nonceStr:"{{$str['nonceStr']}}",
+             signature:"{{$str['signature']}}",
+             jsApiList : [ 'checkJsApi', 'scanQRCode' ],
+        });
         wx.error(function(res) {
             alert("出错了：" + res.errMsg);//这个地方的好处就是wx.config配置错误，会弹出窗口哪里错误，然后根据微信文档查询即可。
         });
