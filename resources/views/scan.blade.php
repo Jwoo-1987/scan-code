@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>test</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
     <style>a:hover{text-decoration: none;}</style>
 
 </head>
