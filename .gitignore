@@ -7,4 +7,16 @@
 .idea/vcs.xml
 .idea/workspace.xml
 public/nginx.htaccess
+/node_modules
+/public/hot
+/public/storage
+/public/fonts/vendor
+/public/css/app.css
+/public/js/app.js
+/public/mix-manifest.json
+/storage/*.key
+/vendor
+.env
+composer.phar
+
 
