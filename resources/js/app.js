@@ -1,2 +1,2 @@
 require('./bootstrap');
-require('layui/dist/layui.js');
+//require('layui/dist/layui.js');

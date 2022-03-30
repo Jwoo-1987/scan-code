@@ -26,3 +26,5 @@ Route::post('/api/count', 'CounterController@updateCount');
 
 
 Route::get('/scan/test', 'ScanController@test');
+Route::get('/scan/list', 'ScanController@list');
+Route::post('/scan/save', 'ScanController@save');

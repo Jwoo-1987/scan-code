@@ -63,11 +63,11 @@ class Toast
         if($code == 0){
             $responseData['status'] = 1;
             $responseData['data'] = $data;
-            $responseData['message'] = 'ok';
+            $responseData['msg'] = 'ok';
         }else{
             $responseData['status'] = 0;
             $responseData['data'] = '';
-            $responseData['message'] = $data;
+            $responseData['msg'] = $data;
         }
 
         $responseData['code'] = $code;
@@ -103,7 +103,7 @@ class Toast
         }
 
         $responseData['code'] = $code;
-        $responseData['message'] = $errMsg ?: 'ok';
+        $responseData['msg'] = $errMsg ?: 'ok';
         if($redirect){
             $responseData['redirect'] = $redirect;
         }

@@ -8,6 +8,7 @@ use EasyWeChat\Factory;
 //use Config\Wechat;
 use App\Models\Counters;
 use App\Common\Toast;
+use App\Models\Code;
 
 class ScanController extends Controller
 {
@@ -23,7 +24,7 @@ class ScanController extends Controller
         return view('scan', ['str' => $data]);
     }
 
-    public function saveCode(Request $request){
+    public function save(Request $request){
         $code = $request->input('code');
         $codeObj = new Code();
         $codeObj->code = $code;
@@ -35,8 +36,31 @@ class ScanController extends Controller
             return Toast::error($res);
         }
         $res = [
-            'data' => ['id'=>$codeObj->id]
+            'id'=>$codeObj->id
         ];
+        return Toast::api($res);
+    }
+
+    public function list(Request $request){
+        $page = $request->input('page',1);
+        $pageSize = 10;
+        $data = Code::orderBy('creat_time', 'desc');
+        $data = $data->paginate($pageSize, ['*'], 'page', $page)->toArray();
+        if($data){
+            $list = $data['data'];
+            $res = array(
+                'items' => $list,
+                'currentPage' => $data['current_page'],
+                'lastPage' => $data['last_page'],
+                'perPage' => $data['per_page'],
+                'total' => $data['total'],
+                'nextPageUrl' => $data['next_page_url']
+            );
+        }
+        return Toast::api(
+            $list
+        );
+
 
     }
 }

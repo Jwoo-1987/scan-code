@@ -10,6 +10,7 @@ public/nginx.htaccess
 /node_modules
 /public/hot
 /public/storage
+/public/vendor
 /public/fonts/vendor
 /public/css/app.css
 /public/js/app.js
@@ -17,7 +18,6 @@ public/nginx.htaccess
 /storage/*.key
 /vendor
 .env
-composer.phar
 MP_verify_0EeU86nxHUivdw8V.txt
 
 
