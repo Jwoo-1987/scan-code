@@ -1,0 +1,5 @@
+Installation failed, reverting ./composer.json to its original content.
+
+
+  [Composer\Downloader\TransportException]
+  Content-Length mismatch, received 573200 bytes out of the expected 1089183

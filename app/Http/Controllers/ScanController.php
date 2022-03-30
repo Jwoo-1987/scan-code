@@ -46,6 +46,7 @@ class ScanController extends Controller
         $pageSize = 10;
         $data = Code::orderBy('creat_time', 'desc');
         $data = $data->paginate($pageSize, ['*'], 'page', $page)->toArray();
+        $list = [];
         if($data){
             $list = $data['data'];
             $res = array(
